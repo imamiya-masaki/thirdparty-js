@@ -7,5 +7,8 @@ export default defineConfig({
       name: 'MyLibrary',
       formats: ['iife']
     }
+  },
+  server: {
+    port: 8000
   }
 })
