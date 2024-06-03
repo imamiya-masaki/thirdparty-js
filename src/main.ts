@@ -13,7 +13,7 @@ function sleep(ms: number): Promise<void> {
 
 
 const mainFunction  = async() => {
-  console.log('hello, vite with IIFE')
+  console.log('execed thirdparty-js')
   // 
   const data = getJsonData()
   window.THIRD_PARTY_JS = {
@@ -21,6 +21,7 @@ const mainFunction  = async() => {
   }
 
   await sleep(5000);
+  console.log('5000 sleeped');
   window.THIRD_PARTY_JS.timeoutFlag = true;
 }
 
