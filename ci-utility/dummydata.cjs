@@ -15,7 +15,7 @@ function generateUsers(numUsers) {
 
 // データをJSON形式で生成
 const data = {
-    data: generateUsers(10000)
+    data: generateUsers(50000)
 };
 
 // JSON形式に変換
