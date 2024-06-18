@@ -14,7 +14,12 @@ function sleep(ms: number): Promise<void> {
 
 const mainFunction  = async() => {
   console.log('execed thirdparty-js')
-  // 
+
+  const p = document.createElement("p")
+  p.innerText = "thirdparty-js 読み込み完了"
+  window.document.body.appendChild(p)
+
+
   const data = getJsonData()
   window.THIRD_PARTY_JS = {
     data: data
